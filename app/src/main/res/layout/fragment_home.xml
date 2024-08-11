@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FCF9DC"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boxshadow_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">\
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+           >
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:text="4T SHOP"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_selector"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:padding="5dp"
+                    android:id="@+id/edt_serch_book"
+                    android:hint="Tìm kiếm"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_overlay"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+
+                    android:background="@drawable/boxshadow"/>
+            <Button
+                android:id="@+id/btn_search_book"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_search"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_slider"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/circle_indicator3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                app:ci_drawable="@drawable/bg_indicator" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/style_book1"
+        android:layout_below="@+id/layout_slider"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="VĂN HỌC VIỆT NAM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/boxshadow_type"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcv_book"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/bg_type"
+            />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book_bg"
+                android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/style_book1"
+        android:orientation="vertical"
+        android:id="@+id/style_book2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="VĂN HỌC NƯỚC NGOÀI"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@drawable/boxshadow_type"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcv_stylebook1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/bg_type"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/book_bg"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/style_book2"
+        android:orientation="vertical"
+        android:id="@+id/style_book3">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SÁCH THIẾU NHI"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@drawable/boxshadow_type"
+            android:gravity="center"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcv_stylebook2"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/bg_type"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/book_bg"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

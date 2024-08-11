@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_name_comment"
+        android:text="Tên người bình luận"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_noidung_comment"
+        android:textColor="@color/black"
+        android:text="nội dung bình luận"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black_overlay"
+        />
+
+</LinearLayout>

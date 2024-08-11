@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/boxshadow_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/yellow1"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/boxshadow1"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/image_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/hinh3"
+                app:civ_border_color="@color/white"
+                android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/name_user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chu Quyết Thắng"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/gmail_user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="developer@appsnipp.com"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/headerText2"
+            android:text="Account Info"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/boxshadow"/>
+
+        <RelativeLayout style="@style/profileDetailsLayout"
+            android:background="@drawable/boxshadow1"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:src="@drawable/ic_name"
+                style="@style/profileDetailsImage" />
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Name"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/name_user2"
+                android:text="developer"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView"
+            android:layout_margin="10dp"/>
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:background="@drawable/boxshadow1"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/emailImageView"
+                android:src="@drawable/ic_email"
+                style="@style/profileDetailsImage" />
+            <TextView
+                android:text="Email"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/gmail_user2"
+                android:text="developer@appsnipp.com"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng Xuất"
+            android:drawableEnd="@drawable/ic_logout"
+            android:background="@drawable/button_selector"
+
+            />
+
+
+
+        <Button
+            android:drawableEnd="@drawable/ic_edit"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_edit_info"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Sửa Thông Tin"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:drawableEnd="@drawable/ic_update"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="update password"
+            android:id="@+id/btn_update_password"
+            android:background="@drawable/button_selector"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="DANH SÁCH">
+            <menu>
+                <item android:id="@+id/van_hoc_vn"
+                    android:title="Văn Học Việt Nam"
+                    android:icon="@drawable/ic_book_type"/>
+                <item android:id="@+id/van_hoc_nuoc_ngoai"
+                    android:title="Văn Học Nước Ngoài"
+                    android:icon="@drawable/ic_book_type"/>
+                <item android:id="@+id/sach_thieuNhi"
+                    android:title="Sách Thiếu Nhi"
+                    android:icon="@drawable/ic_book_type"/>
+            </menu>
+        </item>
+
+    </group>
+    <item android:title="XU HƯỚNG"
+        >
+        <menu>
+            <item android:id="@+id/sach_ban_chay"
+                android:title="SÁCH BÁN CHẠY"
+                android:icon="@drawable/ic_book_type"/>
+            <item android:id="@+id/sach_moi_xb"
+                android:title="SÁCH MỚI XUẤT BẢN"
+                android:icon="@drawable/ic_book_type"/>
+        </menu>
+    </item>
+
+</menu>

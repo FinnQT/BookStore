@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/boxshadow_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/boxshadow"
+        android:padding="5dp"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+
+                android:background="@drawable/boxshadow1"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/update_image_user"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hinh3"
+                    app:civ_border_color="@color/white"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/choose_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose a picture"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/headerText2"
+            android:text="Account Info"
+            android:layout_marginBottom="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:background="@drawable/boxshadow1">
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    android:src="@drawable/ic_name"
+                    style="@style/profileDetailsImage" />
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:text="Name"
+                    android:layout_toRightOf="@id/nameImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <EditText
+                    android:id="@+id/update_name_info"
+                    android:text="developer"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:layout_marginTop="20dp"
+                    style="@style/profileDetailsMiniText1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+
+        <Button
+            android:drawableEnd="@drawable/ic_update"
+            android:id="@+id/btn_update_info"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Update Thông Tin"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector"/>
+        <View style="@style/proifleDetailsView"
+            />
+
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:background="@drawable/boxshadow1"
+                >
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/ic_email"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Email"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <EditText
+                    android:id="@+id/update_email_info"
+                    android:layout_marginTop="20dp"
+                    android:text="developer@appsnipp.com"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsMiniText1" />
+
+            </RelativeLayout>
+
+
+        <View style="@style/proifleDetailsView" />
+        <Button
+            android:drawableEnd="@drawable/ic_update"
+            android:id="@+id/btn_Update_email"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Update Email"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

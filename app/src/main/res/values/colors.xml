@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#9EEBE3</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F7DF0F</color>
+    <color name="yellow2">#E0B875</color>
+    <color name="yellow1">#D9F4EE</color>
+    <color name="bottom_color">#000000</color>
+    <color name="homeFragment">#9C27B0</color>
+    <color name="personalFragment">#FF5722</color>
+    <color name="CartFragment">#009688</color>
+    <color name="black_overlay">#667C7474</color>
+    <color name="blackgroudmangerbook">#66F4EEEE</color>
+    <color name="typecolor">#97280C</color>
+
+
+
+    <!--login-->
+    <color name="colorPrimary">#1F5BF3</color>
+    <color name="colorPrimaryDark">#0947E8</color>
+    <color name="colorAccent">#00A5FF</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+
+
+
+<!--    profi-->
+    <color name="profilePrimaryDark">#A6EBCD</color>
+    <color name="profileAccentColor">#C5B7B7</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+</resources>
